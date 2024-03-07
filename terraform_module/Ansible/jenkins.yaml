@@ -234,7 +234,7 @@ jobs:
         scm {
           git {
             remote {
-              url('https://github.com/your-username/your-repository.git')
+              url('https://github.com/alilotfi23/Jenkins-Automation.git')
               credentials('your-github-credentials-id')
             }
             branches('*/main')
