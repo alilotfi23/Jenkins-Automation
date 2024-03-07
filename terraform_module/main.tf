@@ -24,7 +24,7 @@ data "vsphere_compute_cluster" "cluster" {
 
 resource "null_resource" "run_ansible" {
   triggers = {
-    ansible_playbook_path = "ansible/playbook.yml"
+    ansible_playbook_path = "Ansible/playbook.yml"
   }
 
   provisioner "local-exec" {
