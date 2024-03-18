@@ -18,6 +18,7 @@ module "vm_module" {
   cluster_name           = "your_cluster_name"
   guest_id               = "your_guest_id"
   path                   = "your_path"
+  count                  = var.create_vm ? 1 : 0 # Add count with condition
 }
 
 output "vm_name" {
