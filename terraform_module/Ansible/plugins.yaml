@@ -1,0 +1,135 @@
+plugins:
+  - artifactId: branch-api
+    version: "2.10.0"
+  - artifactId: build-timeout
+    version: "1.20"
+  - artifactId: checks-api
+    version: "1.7.0"
+  - artifactId: cloudbees-folder
+    version: "6.15"
+  - artifactId: command-launcher
+    version: "1.5"
+  - artifactId: configuration-as-code
+    version: "1.52"
+  - artifactId: credentials
+    version: "2.5.0"
+  - artifactId: credentials-binding
+    version: "1.25"
+  - artifactId: display-url-api
+    version: "2.4.3"
+  - artifactId: durable-task
+    version: "1.35"
+  - artifactId: echarts-api
+    version: "5.1.1-2"
+  - artifactId: email-ext
+    version: "2.82"
+  - artifactId: font-awesome-api
+    version: "5.15.4-2"
+  - artifactId: git
+    version: "4.7.1"
+  - artifactId: git-client
+    version: "3.7.2"
+  - artifactId: git-server
+    version: "1.9"
+  - artifactId: github
+    version: "1.38.0"
+  - artifactId: github-api
+    version: "1.127"
+  - artifactId: github-branch-source
+    version: "2.11.4"
+  - artifactId: handlebars
+    version: "1.1.1"
+  - artifactId: jackson2-api
+    version: "2.12.4"
+  - artifactId: jaxb
+    version: "2.3.5"
+  - artifactId: jdk-tool
+    version: "1.5"
+  - artifactId: jsch
+    version: "0.1.55.2"
+  - artifactId: junit
+    version: "1.51"
+  - artifactId: lockable-resources
+    version: "2.13"
+  - artifactId: mailer
+    version: "1.37"
+  - artifactId: matrix-auth
+    version: "2.6.5"
+  - artifactId: matrix-project
+    version: "1.18"
+  - artifactId: pam-auth
+    version: "1.8"
+  - artifactId: pipeline-build-step
+    version: "2.13"
+  - artifactId: pipeline-github-lib
+    version: "1.0"
+  - artifactId: pipeline-graph-analysis
+    version: "1.11"
+  - artifactId: pipeline-input-step
+    version: "2.12"
+  - artifactId: pipeline-milestone-step
+    version: "1.3.1"
+  - artifactId: pipeline-model-api
+    version: "1.8.6"
+  - artifactId: pipeline-model-definition
+    version: "1.10.0"
+  - artifactId: pipeline-model-extensions
+    version: "1.8.6"
+  - artifactId: pipeline-rest-api
+    version: "2.15"
+  - artifactId: pipeline-stage-step
+    version: "2.6"
+  - artifactId: pipeline-stage-tags-metadata
+    version: "1.8.6"
+  - artifactId: pipeline-stage-view
+    version: "2.19"
+  - artifactId: pipeline-utility-steps
+    version: "2.10"
+  - artifactId: plain-credentials
+    version: "1.7"
+  - artifactId: plugin-util-api
+    version: "1.1.3"
+  - artifactId: popper-api
+    version: "1.16"
+  - artifactId: resource-disposer
+    version: "0.18"
+  - artifactId: scm-api
+    version: "2.12.2"
+  - artifactId: script-security
+    version: "1.77"
+  - artifactId: snakeyaml-api
+    version: "2.3.0"
+  - artifactId: ssh-credentials
+    version: "1.20.1"
+  - artifactId: ssh-slaves
+    version: "1.31.5"
+  - artifactId: structs
+    version: "1.23"
+  - artifactId: timestamper
+    version: "1.11.5"
+  - artifactId: token-macro
+    version: "2.15"
+  - artifactId: workflow-aggregator
+    version: "2.6"
+  - artifactId: workflow-api
+    version: "2.48"
+  - artifactId: workflow-basic-steps
+    version: "2.24"
+  - artifactId: workflow-cps
+    version: "2.86"
+  - artifactId: workflow-cps-global-lib
+    version: "2.19"
+  - artifactId: workflow-durable-task-step
+    version: "2.39"
+  - artifactId: workflow-job
+    version: "2.40"
+  - artifactId: workflow-multibranch
+    version: "2.24"
+  - artifactId: workflow-scm-step
+    version: "2.13"
+  - artifactId: workflow-step-api
+    version: "2.23"
+  - artifactId: workflow-support
+    version: "3.8"
+  - artifactId: snyk-security-scanner  
+    version: "4.0.2"
