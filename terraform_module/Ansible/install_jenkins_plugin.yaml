@@ -1,0 +1,6 @@
+---
+- name: Install Jenkins plugin {{ plugin.artifactId }} version {{ plugin.version }}
+  jenkins_plugin:
+    name: "{{ plugin.artifactId }}"
+    version: "{{ plugin.version }}"
+    state: "{{ plugin.state | default('latest') }}"
