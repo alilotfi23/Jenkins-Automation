@@ -48,12 +48,13 @@
         var: jenkins_admin_password.stdout_lines
 
     - name: Install Jenkins plugins
-      jenkins_plugin:
-        name: "{{ item }}"
-        state: latest
-      loop:
-        - configuration-as-code
-        - git
+      include_vars:
+        file: plugin.yaml
+        name: plugins
+      loop: "{{ plugins }}"
+      include_tasks: install_jenkins_plugin.yaml
+      loop_control:
+        loop_var: plugin
 
     - name: Copy JCasC YAML file
       copy:
