@@ -1,7 +1,7 @@
 jenkins:
   agentProtocols:
-  - "JNLP4-connect"
-  - "Ping"
+    - JNLP4-connect
+    - Ping
   authorizationStrategy:
     loggedInUsersCanDoAnything:
       allowAnonymousRead: false
@@ -10,18 +10,18 @@ jenkins:
       excludeClientIPFromCrumb: false
   disableRememberMe: false
   disabledAdministrativeMonitors:
-  - "jenkins.diagnostics.ControllerExecutorsNoAgents"
-  - "hudson.util.DoubleLaunchChecker"
+    - jenkins.diagnostics.ControllerExecutorsNoAgents
+    - hudson.util.DoubleLaunchChecker
   labelAtoms:
-  - name: "built-in"
-  markupFormatter: "plainText"
+    - name: built-in
+  markupFormatter: plainText
   mode: NORMAL
-  myViewsTabBar: "standard"
+  myViewsTabBar: standard
   numExecutors: 2
   primaryView:
     all:
-      name: "all"
-  projectNamingStrategy: "standard"
+      name: all
+  projectNamingStrategy: standard
   quietPeriod: 5
   remotingSecurity:
     enabled: true
@@ -31,31 +31,31 @@ jenkins:
       allowsSignup: false
       enableCaptcha: false
       users:
-      - id: "ali"
-        name: "Ali-lotfi"
-        properties:
-        - "apiToken"
-        - "favorite"
-        - "myView"
-        - preferredProvider:
-            providerId: "default"
-        - "timezone"
-        - "experimentalFlags"
-        - mailer:
-            emailAddress: "ali.lotfi@gmail.com"
+        - id: ali
+          name: Ali-lotfi
+          properties:
+            - apiToken
+            - favorite
+            - myView
+            - preferredProvider:
+                providerId: default
+            - timezone
+            - experimentalFlags
+            - mailer:
+                emailAddress: ali.lotfi@gmail.com
   slaveAgentPort: -1
   updateCenter:
     sites:
-    - id: "default"
-      url: "https://updates.jenkins.io/update-center.json"
+      - id: default
+        url: 'https://updates.jenkins.io/update-center.json'
   views:
-  - all:
-      name: "all"
-  viewsTabBar: "standard"
+    - all:
+        name: all
+  viewsTabBar: standard
 globalCredentialsConfiguration:
   configuration:
-    providerFilter: "none"
-    typeFilter: "none"
+    providerFilter: none
+    typeFilter: none
 security:
   apiToken:
     creationOfLegacyTokenEnabled: false
@@ -65,102 +65,102 @@ security:
     allowedOnAgents: false
     allowedOnController: false
   gitHostKeyVerificationConfiguration:
-    sshHostKeyVerificationStrategy: "knownHostsFileVerificationStrategy"
+    sshHostKeyVerificationStrategy: knownHostsFileVerificationStrategy
   sSHD:
     port: -1
 unclassified:
   ansiColorBuildWrapper:
     colorMaps:
-    - black: "#000000"
-      blackB: "#4C4C4C"
-      blue: "#1E90FF"
-      blueB: "#4682B4"
-      cyan: "#00CDCD"
-      cyanB: "#00FFFF"
-      green: "#00CD00"
-      greenB: "#00FF00"
-      magenta: "#CD00CD"
-      magentaB: "#FF00FF"
-      name: "xterm"
-      red: "#CD0000"
-      redB: "#FF0000"
-      white: "#E5E5E5"
-      whiteB: "#FFFFFF"
-      yellow: "#CDCD00"
-      yellowB: "#FFFF00"
-    - black: "#000000"
-      blackB: "#555555"
-      blue: "#0000AA"
-      blueB: "#5555FF"
-      cyan: "#00AAAA"
-      cyanB: "#55FFFF"
-      defaultBackground: 0
-      defaultForeground: 7
-      green: "#00AA00"
-      greenB: "#55FF55"
-      magenta: "#AA00AA"
-      magentaB: "#FF55FF"
-      name: "vga"
-      red: "#AA0000"
-      redB: "#FF5555"
-      white: "#AAAAAA"
-      whiteB: "#FFFFFF"
-      yellow: "#AA5500"
-      yellowB: "#FFFF55"
-    - black: "black"
-      blackB: "black"
-      blue: "blue"
-      blueB: "blue"
-      cyan: "cyan"
-      cyanB: "cyan"
-      green: "green"
-      greenB: "green"
-      magenta: "magenta"
-      magentaB: "magenta"
-      name: "css"
-      red: "red"
-      redB: "red"
-      white: "white"
-      whiteB: "white"
-      yellow: "yellow"
-      yellowB: "yellow"
-    - black: "#2E3436"
-      blackB: "#2E3436"
-      blue: "#3465A4"
-      blueB: "#3465A4"
-      cyan: "#06989A"
-      cyanB: "#06989A"
-      defaultBackground: 0
-      defaultForeground: 7
-      green: "#4E9A06"
-      greenB: "#4E9A06"
-      magenta: "#75507B"
-      magentaB: "#75507B"
-      name: "gnome-terminal"
-      red: "#CC0000"
-      redB: "#CC0000"
-      white: "#D3D7CF"
-      whiteB: "#D3D7CF"
-      yellow: "#C4A000"
-      yellowB: "#C4A000"
+      - black: '#000000'
+        blackB: '#4C4C4C'
+        blue: '#1E90FF'
+        blueB: '#4682B4'
+        cyan: '#00CDCD'
+        cyanB: '#00FFFF'
+        green: '#00CD00'
+        greenB: '#00FF00'
+        magenta: '#CD00CD'
+        magentaB: '#FF00FF'
+        name: xterm
+        red: '#CD0000'
+        redB: '#FF0000'
+        white: '#E5E5E5'
+        whiteB: '#FFFFFF'
+        yellow: '#CDCD00'
+        yellowB: '#FFFF00'
+      - black: '#000000'
+        blackB: '#555555'
+        blue: '#0000AA'
+        blueB: '#5555FF'
+        cyan: '#00AAAA'
+        cyanB: '#55FFFF'
+        defaultBackground: 0
+        defaultForeground: 7
+        green: '#00AA00'
+        greenB: '#55FF55'
+        magenta: '#AA00AA'
+        magentaB: '#FF55FF'
+        name: vga
+        red: '#AA0000'
+        redB: '#FF5555'
+        white: '#AAAAAA'
+        whiteB: '#FFFFFF'
+        yellow: '#AA5500'
+        yellowB: '#FFFF55'
+      - black: black
+        blackB: black
+        blue: blue
+        blueB: blue
+        cyan: cyan
+        cyanB: cyan
+        green: green
+        greenB: green
+        magenta: magenta
+        magentaB: magenta
+        name: css
+        red: red
+        redB: red
+        white: white
+        whiteB: white
+        yellow: yellow
+        yellowB: yellow
+      - black: '#2E3436'
+        blackB: '#2E3436'
+        blue: '#3465A4'
+        blueB: '#3465A4'
+        cyan: '#06989A'
+        cyanB: '#06989A'
+        defaultBackground: 0
+        defaultForeground: 7
+        green: '#4E9A06'
+        greenB: '#4E9A06'
+        magenta: '#75507B'
+        magentaB: '#75507B'
+        name: gnome-terminal
+        red: '#CC0000'
+        redB: '#CC0000'
+        white: '#D3D7CF'
+        whiteB: '#D3D7CF'
+        yellow: '#C4A000'
+        yellowB: '#C4A000'
   buildDiscarders:
     configuredBuildDiscarders:
-    - "jobBuildDiscarder"
+      - jobBuildDiscarder
   buildStepOperation:
     enabled: false
   email-ext:
     adminRequiredForTemplateTesting: false
     allowUnregisteredEnabled: false
-    charset: "UTF-8"
+    charset: UTF-8
     debugMode: false
     defaultBody: |-
       $PROJECT_NAME - Build # $BUILD_NUMBER - $BUILD_STATUS:
 
       Check console output at $BUILD_URL to view the results.
-    defaultContentType: "text/plain"
-    defaultSubject: "$PROJECT_NAME - Build # $BUILD_NUMBER - $BUILD_STATUS!"
+    defaultContentType: text/plain
+    defaultSubject: '$PROJECT_NAME - Build # $BUILD_NUMBER - $BUILD_STATUS!'
     defaultTriggerIds:
-    - "hudson.plugins.emailext.plugins.trigger.FailureTrigger"
+      - hudson.plugins.emailext.plugins.trigger.FailureTrigger
     maxAttachmentSize: -1
     maxAttachmentSizeMb: -1
     precedenceBulk: false
@@ -172,16 +172,16 @@ unclassified:
     httpClientTimeoutInSeconds: 1
   fingerprints:
     fingerprintCleanupDisabled: false
-    storage: "file"
+    storage: file
   gitHubConfiguration:
     apiRateLimitChecker: ThrottleForNormalize
   gitHubPluginConfig:
-    hookUrl: "http://jenkins:8080/github-webhook/"
+    hookUrl: 'http://jenkins:8080/github-webhook/'
   githubPullRequests:
     actualiseOnFactory: false
   globalTimeOutConfiguration:
     operations:
-    - "abortOperation"
+      - abortOperation
     overwriteable: false
   injectionConfig:
     allowUntrusted: false
@@ -191,12 +191,12 @@ unclassified:
     injectCcudExtension: false
     injectMavenExtension: false
   junitTestResultStorage:
-    storage: "file"
+    storage: file
   location:
-    adminAddress: "address not configured yet <nobody@nowhere>"
-    url: "http://jenkins:8080/"
+    adminAddress: address not configured yet <nobody@nowhere>
+    url: 'http://jenkins:8080/'
   mailer:
-    charset: "UTF-8"
+    charset: UTF-8
     useSsl: false
     useTls: false
   pollSCM:
@@ -213,33 +213,40 @@ unclassified:
     useExistingAccountWithSameEmail: false
   timestamper:
     allPipelines: false
-    elapsedTimeFormat: "'<b>'HH:mm:ss.S'</b> '"
-    systemTimeFormat: "'<b>'HH:mm:ss'</b> '"
+    elapsedTimeFormat: '''<b>''HH:mm:ss.S''</b> '''
+    systemTimeFormat: '''<b>''HH:mm:ss''</b> '''
 tool:
   ansible:
     installations:
-    - home: "/usr/bin"
-      name: "ansible"
+      - home: /usr/bin
+        name: ansible
   git:
     installations:
-    - home: "git"
-      name: "Default"
+      - home: git
+        name: Default
   mavenGlobalConfig:
-    globalSettingsProvider: "standard"
-    settingsProvider: "standard"
-jobs:
-  - script: >
-      freeStyleJob('MyGitHubJob') {
-        description('A job that clones a GitHub repository')
-        scm {
-          git {
-            remote {
-              url('https://github.com/alilotfi23/Jenkins-Automation.git')
-              credentials('your-github-credentials-id')
-            }
-            branches('*/main')
+    globalSettingsProvider: standard
+    settingsProvider: standard
+pipelineJob:
+  - script: |
+      pipeline {
+          agent any
+          stages {
+              stage('Clone Repositories') {
+                  steps {
+                      script {
+                          // Define a list of repositories to clone
+                          def repositories = [
+                              [url: 'https://github.com/alilotfi23/Jenkins-Automation.git', dir: 'repo1'],
+                              [url: 'https://github.com/alilotfi23/Job-DSL.git', dir: 'repo2'],
+                          ]
+
+                          // Clone repositories sequentially
+                          for (repo in repositories) {
+                              checkout([$class: 'GitSCM', branches: [[name: '*/main']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[url: repo.url]]])
+                          }
+                      }
+                  }
+              }       
           }
-        }
       }
-
-
