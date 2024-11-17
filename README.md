@@ -3,7 +3,7 @@
 ## This project will Create vm on Vsphere and install and config Jenkins with ansible and jcasc
 
 ## Asnible
-Define server which you want install Jenkins on it in the playbook.yml
+Define the server on which you want to install Jenkins it in the playbook.yml
 ```shell
 hosts: your_ubuntu_server
 ```
@@ -15,7 +15,7 @@ Install provider
 terraform init
 ```
 
-The terraform plan command creates an execution plan, which lets you preview the changes that Terraform plans to make to your infrastructure
+The Terraform plan command creates an execution plan, which lets you preview the changes that Terraform plans to make to your infrastructure
 
 ```shell
 terraform plan
@@ -26,7 +26,7 @@ Deploy vm on Vsphere
 ```shell
 terraform apply
 ``` 
-## jenkins.yaml file which contains jcasc configuration has a job section that clone all this project
+## jenkins.yaml file which contains jcasc configuration has a job section that clones all this project
 ```shell
 jobs:
   - script: >
