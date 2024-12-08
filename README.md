@@ -3,7 +3,7 @@
 ## This project will Create vm on Vsphere and install and config Jenkins with ansible and jcasc
 
 ## Asnible
-Define the server on which you want to install Jenkins it in the playbook.yml
+Define the server on which you want to install Jenkins in the playbook.yml
 ```shell
 hosts: your_ubuntu_server
 ```
